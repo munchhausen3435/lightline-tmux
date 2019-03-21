@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+main() {
+
+
 set -g status-interval "1"
 set -g status-bg "colour238"
 set -g message-command-fg "colour252"
@@ -25,3 +30,8 @@ set -g status-left "#[fg=colour238,bg=colour117] #S #[fg=colour117,bg=colour238,
 set -g status-right "#[fg=colour240,bg=colour238,nobold,nounderscore,noitalics] #[fg=colour7,bg=colour11] %a,\ %b\ %-d  %-l:%M:%S%p | #(~/bin/utcdate) #[fg=colour14,bg=colour11,nobold,nounderscore,noitalics] #[fg=colour15,bg=colour14] #h "
 setw -g window-status-format "#[fg=colour248,bg=colour238] #I #[fg=colour248,bg=colour238] #W "
 setw -g window-status-current-format "#[fg=colour238,bg=colour240,nobold,nounderscore,noitalics]#[fg=colour252,bg=colour240] #I #[fg=colour252,bg=colour240] #W #[fg=colour240,bg=colour238,nobold,nounderscore,noitalics]"
+}
+
+main
+
+# vim: set filetype=bash
