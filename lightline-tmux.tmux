@@ -18,6 +18,7 @@ main() {
   left_alt_sep=''
   right_sep=''
   right_alt_sep=''
+  mid_sep='
 
 
   tmux set-option -g status on
@@ -39,7 +40,7 @@ main() {
   tmux set-window-option -g window-status-format ' #I #W '
   tmux set-window-option -g window-status-style "fg=${yellow},bg=${dark_gray}"
   tmux set-window-option -g window-status-current-format \
-    "${right_sep}#[fg=${black}] #I | #W #[fg=${dark_gray},reverse]${right_sep}"
+    "${right_sep}#[fg=${black}]#I❘#W #[fg=${dark_gray},reverse]${right_sep}"
   tmux set-window-option -g window-status-current-style "fg=${dark_gray},bg=${light_purple}"
 }
 
