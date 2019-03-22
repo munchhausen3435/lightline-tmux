@@ -18,7 +18,7 @@ main() {
   left_alt_sep=''
   right_sep=''
   right_alt_sep=''
-  mid_sep='|'
+  mid_sep='｜'
 
 
   tmux set-option -g status on
